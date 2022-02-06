@@ -1564,7 +1564,7 @@ h1 span {
 .checked__item:before {
   content: "";
   width: 80%;
-  height: 130%;
+  height: 100%;
   background-color: #F8F6F4;
   position: absolute;
   z-index: -5;
@@ -1572,17 +1572,17 @@ h1 span {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.checked__item:hover:before {
+  height: 130% !important;
 }
 .checked__img {
   margin-bottom: 36px;
 }
 .checked .btn {
   margin: 40px auto;
-}
-
-.checked__item:hover .checked__item:before {
-  opacity: 1 !important;
 }
 
 .method {
